@@ -1,0 +1,17 @@
+<p>loginpage works!</p>
+<div class="container">
+    <h5 class="text-success text-center">Login your Bank account| </h5>
+    <div class="col-8 mx-auto shadow p-3">
+
+       
+
+        <input type="text" placeholder="email" class="form-control my-2 shadow-none" [(ngModel)]="email">
+        <input type="text" placeholder="password" class="form-control my-2 shadow-none" [(ngModel)]="password">
+        <button (click)="login()">login</button><br>
+        <p class="text-danger text-center mx-auto " style="background-color: rgba(255, 0, 0, 0.15); width: 250px; border-radius: 70px;align-self: center;">{{msg}}</p>
+            <p>Don't have an account? <a routerLink="/">Sign up</a></p>
+            
+    </div>
+   
+
+</div>

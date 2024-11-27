@@ -1,0 +1,65 @@
+<p>signuppage works!</p>
+
+
+<div class="conatainer">
+    <div class="col-7 mx-auto shadow p-4">
+        <h2 class="text-center text-bg-primary " style="border-radius: 10PX;">Bank with us today </h2>
+        <input type="text" placeholder="Full name" class="form-control my-2 shadow-none" [(ngModel)]="fullname" name="fname">
+        <input type="text" placeholder="email" class="form-control my-2 shadow-none" [(ngModel)]="email" name="mail">
+        <input type="text" placeholder="password" class="form-control my-2 shadow-none" [(ngModel)]="password" name="pass">
+        <input type="text" placeholder="phonenumber" class="form-control my-2 shadow-none" [(ngModel)]="phonenumber" name="phone">
+        <input type="text" placeholder="next of kin" class="form-control my-2 shadow-none" [(ngModel)]="nextofkin" name="nextofkin">
+        
+
+        
+    
+        <label for="account">Select Account type</label>
+        <select class="form-control my-2 shadow-none" id="account" [(ngModel)]="selectedAccount" name="account" (change)="onClassChange()">
+          
+          
+          <option value="savings">savings </option>
+          <option value="current">current </option>
+          <option value="fixed">fixed </option>
+
+        </select>
+      
+  
+      
+      
+  
+      
+      
+        <label for="gender"  >Gender</label>
+        <select class="form-control my-2 shadow-none" id="gender" [(ngModel)]="gender" name="gender">
+          <option value="male"   class="shadow" >Male</option>
+          <option value="female" class="shadow" >Female</option>
+          
+        </select>
+      
+  
+     
+      
+        <label for="dob">Date of Birth</label>
+        <input type="date" class="form-control my-2 shadow-none" id="dob" [(ngModel)]="dob" name="dob">
+      
+
+
+
+
+
+
+
+        <button (click)="signup()" style="border-radius: 5PX;text-align: center; " class=" butt w-25">Create an account</button>
+
+        
+
+        <p>Existing  account? <a routerLink="/login">Sign in</a></p>
+
+    </div>
+
+    
+
+</div>
+
+```
+
